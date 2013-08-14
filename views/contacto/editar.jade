@@ -1,0 +1,18 @@
+extends ../layout
+
+  block content
+    div(class='container')
+      form(method='post', action='/contacto/#{c.id}')
+        input(name='_method', value='PUT', type='hidden')
+        fieldset
+          legend Editar contacto
+          div(class='form-group')
+            label Nombre
+            input(type='text', class='form-control', name='nombre', placeholder='Nombre', value='#{c.nombre}')
+          div(class='form-group')
+            label Nombre
+            input(type='text', class='form-control', name='apellido', placeholder='Apellido', value='#{c.apellido}')
+          div(class='form-group')
+            label Nombre
+            input(type='text', class='form-control', name='correo', placeholder='Correo', value='#{c.correo}')
+          button(type='submit', class='btn btn-default btn-small') Actualizar

@@ -1,0 +1,44 @@
+doctype 5
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/bootstrap.css')
+    style
+      body{
+        padding-top: 70px;
+      }
+  body
+    div(class='navbar navbar-inverse navbar-fixed-top bs-docs-nav')
+      div(class='container')
+        button(class='navbar-toggle', type='button', data-toggle='collapse', data-target='.bs-navbar-collapse')
+          span(class='icon-bar')
+          span(class='icon-bar')
+          span(class='icon-bar')
+      a(href='/', class='navbar-brand') AgendaJS
+      div(class='nav-collapse collapse bs-navbar-collapse')
+        ul(class='nav navbar-nav pull-right')
+          li
+            a(href='/') Notificaciones
+              span.badge 2
+          li(class='dropdown')
+            a(href='#', class='dropdown-toggle', data-toggle='dropdown') Contactos
+              b(class='caret')
+            ul(class='dropdown-menu')
+              li
+                a(href='/contacto/crear') Crear contacto
+              li
+                a(href='/contacto') Contactos
+              li(class='divider')
+              //li(class='nav-header')
+              li
+                a(href='#') Cerrar sesion
+    block content
+    script(src='/javascripts/jquery.js')
+    script(src='/javascripts/bootstrap.js')
+    //script(src='/javascripts/dropdown.js')
+    script(src='/javascripts/respond.min.js')
+    footer
+      div.container
+        //p(class='text-center')
+        //  "TE AMO CARIÑO Y EL DESEO DE MI CORAZÓN ES QUE BUSQUEMOS A DIOS TODOS LOS DÍAS DE NUESTRA VIDA, PARA QUE ÉL NOS GUIE Y NOS DÉ LOS FUNDAMENTOS PARA TENER UN MATRIMONIO VICTORIOSO"
+        p.text-center Derechos Reservados 2013
